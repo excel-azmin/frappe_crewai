@@ -1,0 +1,5 @@
+answer_question:
+  description: >
+    User asked: {question}. Search the ERPNext database using your tools and provide an answer.
+  expected_output: >
+    Clear, human-readable answer based on ERPNext data.

@@ -11,6 +11,9 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/frappe_crewai/css/frappe_crewai.css"
 # app_include_js = "/assets/frappe_crewai/js/frappe_crewai.js"
+app_include_js = "/assets/frappe_crewai/js/ai_chat.js"
+app_include_css = "/assets/frappe_crewai/css/ai_chat.css"
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/frappe_crewai/css/frappe_crewai.css"

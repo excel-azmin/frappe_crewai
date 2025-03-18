@@ -1,0 +1,71 @@
+#ai-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#ai-chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+#ai-chat-header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#ai-chat-body {
+    height: 200px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#ai-chat-input {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.user-msg {
+    background: #f0f0f0;
+    padding: 6px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    text-align: right;
+}
+
+.ai-msg {
+    background: #e0ffe0;
+    padding: 6px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.ai-msg.error {
+    background: #ffe0e0;
+    color: red;
+}
