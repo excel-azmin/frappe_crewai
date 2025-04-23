@@ -159,6 +159,11 @@ app_include_css = "/assets/frappe_crewai/css/ai_chat.css"
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "frappe_crewai.event.get_events"
 # }
+
+override_whitelisted_methods = {
+    "frappe.www.login.login": "frappe_crewai.www.login"
+}
+
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,

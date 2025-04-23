@@ -5,9 +5,9 @@ from frappe_crewai.crew.frappe_ai_crew import FrappeAiCrew
 def ask_ai(query):
     try:
         ai_crew = FrappeAiCrew()
-        ai_crew.crew().kickoff(inputs={'question': query})
-        result = ai_crew.crew().output
+        result = ai_crew.crew().kickoff(inputs={'topic': query})
         return {'result': result}
     except Exception as e:
-        frappe.log_error(f"AI Query Error: {str(e)}")
-        return {'error': str(e)}
+        error_msg = str(e)[:135]  # Truncate to 135 characters
+        frappe.log_error(f"AI Error: {error_msg}")
+        return {'error': error_msg}

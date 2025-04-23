@@ -1,0 +1,23 @@
+{% extends "templates/web.html" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/assets/my_website_app/css/login.css">
+{% endblock %}
+
+{% block page_content %}
+<div class="login-container">
+  <h1>Sign In</h1>
+  <form method="POST">
+    <input type="text" name="usr" placeholder="Email or Username" required />
+    <input type="password" name="pwd" placeholder="Password" required />
+    <button type="submit">Login</button>
+  </form>
+  {% if message %}
+    <p class="error-message">{{ message }}</p>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block script %}
+  <script src="/assets/my_website_app/js/login.js"></script>
+{% endblock %}

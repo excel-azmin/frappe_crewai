@@ -10,6 +10,11 @@ dynamic = ["version"]
 dependencies = [
     # "frappe~=15.0.0",  # Comment this out – managed by Bench
     "crewai[tools]",
+    "ollama",
+    "embedchain[mysql]",
+    "pymysql",
+    "embedchain",
+    "langchain-ollama"
 ]
 
 [build-system]
