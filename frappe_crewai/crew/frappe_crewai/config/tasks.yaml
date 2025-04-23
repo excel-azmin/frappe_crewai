@@ -1,6 +1,6 @@
 erpnext_task:
   description: >
-    User asked: {topic}. Search the ERPNext database using your tools and provide an answer.
+    The user has asked: "{topic}". Query the ERPNext database to get an accurate, factual answer. Use SQL-like logic, not speculation.
   expected_output: >
-    Clear, human-readable answer based on ERPNext data about {topic}.
-  agent: erpnext_agent  
+    Return a simple, human-readable answer from the ERPNext database. Do not summarize or interpret — just state the answer.
+  agent: erpnext_agent
